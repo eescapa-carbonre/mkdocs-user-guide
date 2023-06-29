@@ -20,7 +20,7 @@ nav:
   - Today: 
     - today/today.md
     - Data Ingestion: today/data_ingestion.md
-    - ⚠️ Lab Data: today/lab_data.md
+    - Lab Data: today/lab_data.md
     - Sensor Data: today/sensor_data.md
     - Current Recommendation: today/current_recommendation.md
     - Operator Review of Recommendations: today/operator_review.md
@@ -34,9 +34,9 @@ nav:
       - Daily Average SHC ranked from lowest to highest: reports/heu/heu_average_shc_ranked.md
       - Performances: reports/heu/performances.md
     
-    - ⚠️ Historical Recommendations: reports/historical_recommendations.md
-    - ⚠️ Free Lime: reports/free_lime.md
-    - ⚠️ Quality: reports/quality.md
+    - Historical Recommendations: reports/historical_recommendations.md
+    - Free Lime: reports/free_lime.md
+    - Quality: reports/quality.md
 
     - Heat Balance: reports/heat_balance.md
     - Additional Reports: reports/additional.md

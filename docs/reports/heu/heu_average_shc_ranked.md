@@ -1,4 +1,4 @@
-This chart orders & ranks all the daily **Average SHC** in the selected time period: From the lowest daily average emissions (Best, 0%, Rank no. 1) to highest emissions (Worst, 100%)..
+This chart orders & ranks all the daily **Average SHC** (Specific Heat Consumption) in the selected time period: From the lowest daily average emissions (Best, 0%, Rank no. 1) to highest emissions (Worst, 100%)..
 
 ![Average SHC ranked](../../_assets/media/screenshots/reports/heu_ranked.png)
 
