@@ -1,0 +1,371 @@
+/* Carbon Re colours 
+  white: '#fff',
+  blue: '#0000FF'
+
+  // Black/Grey
+    carbon: '#141414',
+    charcoal: '#4a4f54',
+  
+  // Primary (green) palette
+    rich: '#2b5740',
+    leaf: '#8aad66',
+    fresh: '#cfe5b2',
+  
+  // fire (orange) palette
+    lava: '#F52600',
+    flame: '#F58302',
+    glow: '#F5E730',
+    
+*/
+
+:root {
+  /* Primary color shades */
+  --md-primary-fg-color:        #2B5740;
+  /* --md-primary-fg-color--light: #861f4194;
+  --md-primary-fg-color--dark: #ac325a; */
+  --md-primary-bg-color: hsla(0, 0%, 100%, 1);
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-text-link-color: hsla(231, 48%, 48%, 1);
+
+  /* Accent color shades */
+  --md-accent-fg-color: #2B5740;
+  --md-accent-fg-color--transparent: hsla(189, 100%, 37%, 0.1);
+  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+}
+
+html {
+  /* The nav header is 5.5784375rem high, plus 20px for the margin-top of the
+     main container. */
+  scroll-padding-top: calc(5.5784375rem + 20px);
+}
+
+h1, h2 {
+  font-size: 1.4vw;
+  font-family: 'Mada', sans-serif;
+}
+
+body {
+  font-family: 'Mada', sans-serif;
+}
+
+/* Make hyperlinks within content bold and turn leaf on hover */
+.md-content a {
+  font-weight: bold;
+}
+.md-content a:hover {
+  color: #8aad66 !important;
+}
+
+/* Make images slightly less wide */
+.md-content img {
+  max-width:95%;
+}
+
+/* Make certain images even less wide */
+.md-content img.img-smaller {
+  max-width:300px;
+}
+
+/* Force call-out text to be the same size as content */
+.md-typeset .admonition {
+  font-size: 1em
+}
+
+/* Make labels (1, 2, 3..) small and vertically aligned */
+img.label {
+  width:25px;
+  vertical-align:middle;
+}
+
+/* Floating images */
+img.img-right {
+  float:right;
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+
+img.img-left {
+  float:left;
+  margin-left: .8rem;
+  margin-right: .8rem;
+}
+
+
+
+
+
+/* Override icons */
+h2 img {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+img.fire-icon {
+  filter: invert(1),
+}
+
+/* Override AdminLTE.css */
+.box {
+  background: initial;
+  border-radius: initial;
+  border-top: initial;
+}
+
+.skin-black {
+  .main-sidebar {
+    background-color: #141414;
+  }  
+  
+  .main-header {
+    .logo {
+      background-color: #2B5740;
+      
+      img {
+        height: 100%;
+      }
+    }
+    
+    .product-name {
+      color: white;
+      font-family: 'Mada', sans-serif;
+      font-weight: 700;
+    }
+    
+    .navbar {
+      background-color: #2B5740;
+    }
+  }
+ 
+  // Side bar selected button. 
+  .main-sidebar .sidebar .sidebar-menu .active a {
+    background-color: #2B5740;
+  }
+}
+
+.content-wrapper,
+.right-side {
+  background-color: #292B2D;
+}
+
+.highlight-box .box-header {
+  display: none;
+}
+
+.action-box {
+  background-color: white;
+  border: 1px;
+  border-radius: 8px;
+  border-color: white;
+  border-style: solid;
+  color: #333333;
+  padding: 8px;
+}
+
+.reject-box {
+  background-color: white;
+  border-radius: 8px;
+  color: #333333;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.savings-box {
+  background-color: #2B5740;
+  border-radius: 15px;
+  font-size: 2vw;
+}
+
+.savings-box h2 {
+  font-size: 1.2vw;
+}
+
+.total-box {
+  background-color: green;
+}
+
+.highlight-box {
+  background-color: #292B2D;
+  border-radius: 16px;
+  font-size: 2vw;
+  
+  .title {
+    display:flex;
+    
+    .icon {
+      background-color: rgba(255, 255, 255, 0.35);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      border-radius: 100%;
+      height: 24px;
+      margin-right: 4px;
+      width: 24px;
+    }
+
+    // TODO(steve): Can probably consolidate these image path declarations.
+    .icon.cup {
+      background-image: url('./cup.png');
+    }
+
+    .icon.flame {
+      background-image: url('./flame.png');
+    }
+    
+    .name {
+      flex: 1;
+      font-size: 1.3vw;
+    }
+  }
+
+  .value-unit {
+    font-size: 1vw;
+  }
+}
+
+.highlight-box.savings {
+  background-color: #2B5740;
+}
+
+.box-body.highlight-box h2 {
+  font-size: 1.1vw;
+}
+
+.box-body.day-title {
+  font-size: 1.1vw;
+  letter-spacing: 3px;
+  padding: 0;
+}
+
+.box-body.group-header {
+  padding: 0;
+}
+
+.total-box {
+  background-color: green;
+}
+
+/* Rows */
+.tab-content .tab-pane .row {
+  margin: 8px;
+  padding: 16px;
+}
+
+.tab-content .tab-pane .row .col-sm-2 {
+  padding: 0 8px;
+}
+
+.tab-content .tab-pane .row .group-header {
+  color: white;
+  font-size: 1.6vw;
+  margin: 0;
+  text-align: left;
+}
+
+.row.day-row, .row.viz-row {
+  background-color: #141414;
+  border-radius: 16px;
+}
+
+/* Savings */
+.tab-content .tab-pane .row:nth-child(4) {
+}
+
+/* Action row */
+.tab-content .tab-pane .row .col-sm-4 {
+  /* background-color: white; */
+}
+
+/* Action boxes */
+.tab-content .tab-pane .row .col-sm-4 div div.box {
+  margin-bottom: 8px;
+}
+
+.today_highlight-p {
+  color: white;
+  font-size: 2.2vw;
+  margin: 0;
+  text-align: left;
+}
+
+.yesterday_highlight-p {
+  color: white;
+  font-size: 1.8vw;
+  text-align: left;
+}
+
+.recommendation-card {
+  border: 1px #DDD solid;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  margin: 8px 0;
+  padding: 8px;
+  
+  .icon {
+    background-color: #2B5740;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border-radius: 100%;
+    height: 32px;
+    margin-right: 8px;
+    width: 32px;
+  }
+    
+  .icon.kiln-temp {
+    background-image: url('./thermometer.png');
+  }
+  
+  .icon.fan-speed {
+    background-image: url('./propeller.png');
+    background-size: 50%;
+  }
+  
+  .icon.kiln-feed {
+    background-image: url('./material_feed.png');
+  }
+  
+  .recommendation-content {
+    display: flex;
+    flex: 1;
+  
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .column.action {
+      flex: 1;
+  
+      .action-title {
+        color: #666;
+        font-size: 0.8vw;
+      }
+      
+      .action-text, #selected_action {
+        font-size: 1.3vw;
+      }
+    }
+    
+    .column.value {
+      border: solid 2px #2B5740;
+      border-radius: 4px;
+      padding: 4px;
+      
+      .action-value {
+        color: #2B5740;
+        font-size: 2.4vw;
+        font-weight: 500;
+        line-height: 1;
+      }
+      
+      .action-unit {
+        color: #666;
+        font-size: 1vw;
+        line-height: 0.8;
+      }
+    }
+  }
+}

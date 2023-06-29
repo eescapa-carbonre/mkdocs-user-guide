@@ -1,0 +1,174 @@
+site_name: Delta Zero User Guide
+copyright: Copyright &copy; 2023 Carbon Re
+
+# -- Navigation Outline -- # 
+nav:
+  - Home: index.md
+  - Prerequisites:
+    - Technical Requirements:
+      - prerequisites/technical-requirements.md
+    - Data Access Requirements:
+      - prerequisites/data-access-requirements.md
+      - Data Pipeline: prerequisites/data-pipeline.md
+      - Data Policy: prerequisites/data-policy.md
+  - User Management:
+    - users/access.md
+    - User Management: users/user-management.md
+    - Add new users: users/add-new-users.md
+    - Password Reset: users/password-reset.md
+  
+  - Today: 
+    - today/today.md
+    - Data Ingestion: today/data_ingestion.md
+    - ⚠️ Lab Data: today/lab_data.md
+    - Sensor Data: today/sensor_data.md
+    - Current Recommendation: today/current_recommendation.md
+    - Operator Review of Recommendations: today/operator_review.md
+    - Feedback: today/operator_review.md
+    - Common Issues: today/common_issues.md
+
+  - Data Reports:
+    - Historical Energy Use:
+      - reports/heu/historical_energy_use.md
+      - Average SHC by date: reports/heu/heu_average_shc_date.md
+      - Daily Average SHC ranked from lowest to highest: reports/heu/heu_average_shc_ranked.md
+      - Performances: reports/heu/performances.md
+    
+    - ⚠️ Historical Recommendations: reports/historical_recommendations.md
+    - ⚠️ Free Lime: reports/free_lime.md
+    - ⚠️ Quality: reports/quality.md
+
+    - Heat Balance: reports/heat_balance.md
+    - Additional Reports: reports/additional.md
+
+  - Contact: contact.md
+
+
+# -- Style -- #
+theme: 
+  name: material #github.com/squidfunk/mkdocs-material
+  logo: _assets/media/dz-logo-white.png
+  favicon: _assets/media/dz-favicon.ico
+
+  palette:
+    primary: custom
+    accent: custom
+  
+  features:
+  # Relative linking (mkdocs-autolinks-plugin) #
+    - autolinks
+
+  # Enable markdown annotations in code snippets
+    - content.code.annotate
+
+  # -- Navigation Bar -- #
+
+    # Table of contents integrated to navigation sidebar on the left
+    - toc.integrate
+    # (not compatible with toc.integrate) Enable sections
+    # - navigation.sections
+
+    # Add tabs to top of page & keep them there
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # Keep navbar expanded
+    - navigation.expand
+    # Add a back-to-top button when scrolling up
+    - navigation.top
+    # Change anchor automatically
+    - navigation.tracking
+
+    # (in beta) Removes duplicates in nav bar #
+    - navigation.indexes
+    # (in beta) Breadcrumb navigation at the top of page
+    - navigation.path
+
+  # -- Search bar -- #
+    - search
+    # Highlight results after search
+    - search.highlight
+    # Add share button for search
+    - search.share
+    # Fuzzy autocomplete in search bar
+    - search.suggest
+
+
+plugins:
+  - search
+  - macros
+
+# -- Enable CSS -- #
+extra_css: [_assets/extra.css]
+
+# -- Enable SCSS -- #
+  # - extra-sass
+# extra_css:
+  # - "_assets/style5.scss"
+
+markdown_extensions:
+  # Adds permalinks to headings, shows link symbol on hover
+    - toc:
+        permalink: "&#128279;"
+
+  # Enables task lists
+    - pymdownx.tasklist
+  
+  # Add call-outs
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+  
+  # Enables images
+    - attr_list
+    - md_in_html
+
+
+extra:
+
+  # Google Analytics #
+  analytics:
+    provider: google
+    property: G-V7XLPW8WZM
+
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+
+
+            Thanks for your feedback! Help us improve this page by
+            contacting support@carbonre.com
+
+  # Variables (mkdocs-macros-plugin)
+  support: "[support@carbonre.com](mailto:support@carbonre.com)"
+  label_1: "![1](../_assets/media/labels/1.png){: .label }"
+  label_2: "![2](../_assets/media/labels/2.png){: .label }"
+  label_3: "![3](../_assets/media/labels/3.png){: .label }"
+  label_4: "![4](../_assets/media/labels/4.png){: .label }"
+  label_5: "![5](../_assets/media/labels/5.png){: .label }"
+  label_6: "![6](../_assets/media/labels/6.png){: .label }"
+
+  parameter_amber: "<span style=\"color:#F58302; font-weight:bold\">Amber</span>"
+  parameter_lightGreen: "<span style=\"color:#8aad66; font-weight:bold\">Light Green</span> (recommendable metric): Parameter can be adjusted to the changes flagged in the [Current Recommendation](current_recommenation.md)."
+  parameter_green: "<span style=\"color:#2b5740; font-weight:bold\">Green</span> (predictable metric): Parameter is not adjustable, however it should update if the Current Recommendation is applied. "
+  parameter_black: "**Black** (standard metric): Parameter is not subject to recommendations; displayed for informational purposes only."
+
+
+  # Language Support
+  # alternate:
+  #   - name: English
+  #     lang: en
+  #   - name: Español
+  #     link: /es/
+  #     lang: es
+  
+  # Removes the footer > "Made with Material for MkDocs"
+  generator: false
