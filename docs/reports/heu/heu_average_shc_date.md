@@ -1,4 +1,4 @@
-The **Average SHC** is calculated on a per-day (24-hour period based on your local timezone) or 7-day basis over the selected time period. 
+The **Average SHC** (Specific Heat Consumption) is calculated on a per-day (24-hour period based on your local timezone) or 7-day basis over the selected time period. 
 
 Hover over the chart to see the data points.
 

@@ -1,9 +1,9 @@
+!!! bug "Issues"
+    See [Common Issues](common_issues.md) if there are issues with the data ingestion or a new recommendation failed to generate.
+
 **Data Ingestion** tracks whether plant data is successfully synced (sent to Carbon Re servers) every 15 minutes as scheduled.
 
 The **Status** updates if the data received is lower or higher than expected metrics, or is not being synced at all. 
-
-!!! bug "Issues"
-    See [Common Issues](common_issues.md) if there are issues with the data ingestion or a new recommendation failed to generate.
 
 There are 3 statuses demonstrating the state of the data flow: 
 
