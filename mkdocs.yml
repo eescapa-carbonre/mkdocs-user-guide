@@ -28,11 +28,11 @@ nav:
     - Common Issues: today/common_issues.md
 
   - Data Reports:
-    - Historical Energy Use:
-      - reports/heu/historical_energy_use.md
-      - Average SHC by date: reports/heu/heu_average_shc_date.md
-      - Daily Average SHC ranked from lowest to highest: reports/heu/heu_average_shc_ranked.md
-      - Performances: reports/heu/performances.md
+    - Specific Heat Consumption:
+      - reports/shc/shc.md
+      - Weekly average SHC: reports/shc/weekly_average_shc.md
+      - Daily average SHC ranked from lowest to highest: reports/shc/daily_average_shc.md
+      - Performances: reports/shc/performances.md
     
     - Historical Recommendations: reports/historical_recommendations.md
     - Free Lime: reports/free_lime.md
@@ -157,7 +157,7 @@ extra:
   label_6: "![6](../_assets/media/labels/6.png){: .label }"
 
   parameter_amber: "<span style=\"color:#F58302; font-weight:bold\">Amber</span>"
-  parameter_lightGreen: "<span style=\"color:#8aad66; font-weight:bold\">Light Green</span> (recommendable metric): Parameter can be adjusted to the changes flagged in the [Current Recommendation](current_recommenation.md)."
+  parameter_lightGreen: "<span style=\"color:#8aad66; font-weight:bold\">Light Green</span> (recommendable metric): Parameter can be adjusted to the changes flagged in the [Current Recommendation](current_recommendation.md)."
   parameter_green: "<span style=\"color:#2b5740; font-weight:bold\">Green</span> (predictable metric): Parameter is not adjustable, however it should update if the Current Recommendation is applied. "
   parameter_black: "**Black** (standard metric): Parameter is not subject to recommendations; displayed for informational purposes only."
 
