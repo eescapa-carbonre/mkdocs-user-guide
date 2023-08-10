@@ -3,18 +3,18 @@
   blue: '#0000FF'
 
   // Black/Grey
-    carbon: '#141414',
-    charcoal: '#4a4f54',
+    carbon: '#141414', (black)
+    charcoal: '#4a4f54', (dark grey)
   
   // Primary (green) palette
-    rich: '#2b5740',
-    leaf: '#8aad66',
-    fresh: '#cfe5b2',
+    rich: '#2b5740', (dark green)
+    leaf: '#8aad66', (green)
+    fresh: '#cfe5b2', (super light green)
   
   // fire (orange) palette
-    lava: '#F52600',
-    flame: '#F58302',
-    glow: '#F5E730',
+    lava: '#F52600', (red)
+    flame: '#F58302', (amber)
+    glow: '#F5E730', (yellow)
     
 */
 
@@ -65,6 +65,11 @@ body {
 /* Make certain images even less wide */
 .md-content img.img-smaller {
   max-width:300px;
+}
+
+/* Make certain images even less tall */
+.md-content img.img-shorter {
+  max-height:300px;
 }
 
 /* Force call-out text to be the same size as content */

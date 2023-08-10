@@ -4,7 +4,6 @@ Other customer packages have included historical, current, or calculated data on
 
 - Ammonia
 - Clinker XRF
-- Free Lime
 - Fuels
 - Gas Analyser 
 - Raw Meal Quality

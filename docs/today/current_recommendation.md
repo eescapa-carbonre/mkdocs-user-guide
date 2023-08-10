@@ -1,8 +1,15 @@
+![New Recommendation](../_assets/media/screenshots/today/new-recommendation.png){ .img-left .img-smaller }
+
 A **recommendation** is a set of suggested changes to the recommendable metrics (plant parameters shown in <span style="color:#8aad66; font-weight:bold">light green</span>) that are forecasted to reduce carbon emissions & fuel costs.
 
 A new recommendation is generated every 2 hours, alerting the user with a sound and notification banner that disappears after 30 minutes.
 
-![New Recommendation](../_assets/media/screenshots/today/new-recommendation.png)
+<br />
+<br />
+<br />
+<br />
+
+## Parameter States
 
 The state of each recommendable metric is highlighted in the following colours:
 

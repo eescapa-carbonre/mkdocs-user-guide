@@ -4,7 +4,7 @@ The average of the top 10% lowest emissions (specific heat consumption [SHC]) in
 
 ## Historical Average Performance
 
-The average of all daily emissions in the selected time period. This is the Baseline SHC (horizontal white line) in the [Daily Average SHC](heu_average_shc_date.md) by date chart.
+The average of all historical daily emissions.
 
 ## Trial Average Performance
 

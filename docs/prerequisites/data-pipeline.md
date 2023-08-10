@@ -32,9 +32,9 @@ During the discovery phase, you will be asked to fill out a General Plant Questi
 In addition to the questionnaire, you will be asked to provide the following information: 
 
 - [ ] Full list of available data tags, such as: 
-* Plant parameters & metrics (i.e. sensor data, such as temperature, pressure, air flow, etc)
-* Fuel chemistry analyses
-* Other chemistry data (e.g. kiln feed, hot meal, clinker chemistry, etc)
+    * Plant parameters & metrics (i.e. sensor data, such as temperature, pressure, air flow, etc)
+    * Fuel chemistry analyses
+    * Other chemistry data (e.g. kiln feed, hot meal, clinker chemistry, etc)
 
 - [ ] Kiln cooler & preheater specifications.
 - [ ] Standard kiln and lab operation practices & processes.

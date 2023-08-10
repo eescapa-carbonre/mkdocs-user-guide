@@ -6,8 +6,8 @@ Measured parameters are pulled directly from plant data.
 
 Modelled (predicted) parameters are calculated approximately every 15 minutes, based on the measured values.
 
-<br />
-<br />
+Selecting the tile will redirect you to the [Quality](../reports/quality.md) page.
+
 <br />
 
 ## Parameter States
