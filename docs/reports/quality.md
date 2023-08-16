@@ -1,6 +1,10 @@
 # Quality
 
-The **Quality** data reports charts the measured and modelled (predicted) values of free lime and degree of calcination.
+The **Quality** data report charts the measured and modelled (predicted) values of Free Lime and Degree of Calcination (DoC).
+
+**Measured** values are physical measurements obtained directly from lab data analyses of material samples.
+
+**Modelled** values (also known as soft sensors) are predicted values between intervals of lab data (without implying we need lab data, i.e. 30d). These calculations are based on measured values (such as pressure, humidity, and time of day) as well as other plant data.
 
 ![Quality](../_assets/media/screenshots/reports/quality.png)
 

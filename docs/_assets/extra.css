@@ -5,6 +5,7 @@
   // Black/Grey
     carbon: '#141414', (black)
     charcoal: '#4a4f54', (dark grey)
+    white: '#fff' (white)
   
   // Primary (green) palette
     rich: '#2b5740', (dark green)
@@ -19,19 +20,12 @@
 */
 
 :root {
-  /* Primary color shades */
-  --md-primary-fg-color:        #2B5740;
-  /* --md-primary-fg-color--light: #861f4194;
-  --md-primary-fg-color--dark: #ac325a; */
-  --md-primary-bg-color: hsla(0, 0%, 100%, 1);
-  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
-  --md-text-link-color: hsla(231, 48%, 48%, 1);
+  /* Colour of header bar */
+  --md-primary-fg-color: #141414;
+}
 
-  /* Accent color shades */
-  --md-accent-fg-color: #2B5740;
-  --md-accent-fg-color--transparent: hsla(189, 100%, 37%, 0.1);
-  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
-  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+.md-footer {
+  background-color: #2b5740;
 }
 
 html {
@@ -48,10 +42,22 @@ h1, h2 {
 body {
   font-family: 'Mada', sans-serif;
 }
+/* Make navigation links Fresh on hover, and Leaf on active page */
+.md-tabs__link {
+  font-size:1.5em;
+}
+.md-tabs__link:hover {
+  color: #cfe5b2;
+}
+.md-tabs__link--active, .md-nav__link:hover {
+  color: #8aad66;
+}
 
-/* Make hyperlinks within content bold and turn leaf on hover */
+
+/* Make hyperlinks within content bold and turn Leaf on hover */
 .md-content a {
   font-weight: bold;
+  color: #2b5740;
 }
 .md-content a:hover {
   color: #8aad66 !important;

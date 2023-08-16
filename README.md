@@ -1,5 +1,5 @@
 # mkdocs-user-guide
-Delta Zero User Guide built on MkDocs 
+Delta Zero User Guide built on [MkDocs](https://www.mkdocs.org/user-guide/installation/).
 
 
 # Instructions
